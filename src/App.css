@@ -1,38 +1,94 @@
-.App {
-  text-align: center;
+@import url('https://fonts.goiogleapis.com/css2?family=Righteous&display=swap');
+
+body {
+  font-family: 'Righteous', cursive;
+  color: #d14f4f;
+  line-height: 1.7;
+  font-size: 19px;
+  background-color: #222222;
+  background-image: url("https://th.bing.com/th/id/R.324c862d16dcb411434d6c87f13e1496?rik=vaSrz2JnNlP3PA&riu=http%3a%2f%2fmyth3.bravesites.com%2ffiles%2fresized%2f419636%2f564%3b701%3ba62c4ac4a55d8481bb3c30deec39dc1521955b52.jpg&ehk=NcKXP4Eeeydf%2b%2boAGmbngs73AkT2FZ2yWFI4e7e9Dv8%3d&risl=&pid=ImgRaw&r=0");
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar {
+  background-color: rgba(22, 22, 22, 0.8);
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.link {
+  color: #efefef;
+  display: inline-block;
+  padding: 3px 20px;
+  font-size: 16px;
+  text-decoration: none;
+  transition: 0.3s ease all;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.link:hover {
+  color: #f59494;
+  transform: sclae(1,1);
+}
+
+.nasa-photo {
+  display: flex;
+  padding: 40px;
+  margin: 0 auto;
+  max-height: 100%;
+}
+
+.nasa-photo img {
+  width: 50%;
+  margin-right: 50px;
+  object-fit: contain;
+  max-height: 80vh;
+}
+
+.nasa-photo h1 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.nasa-photo .date {
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.nasa-photo .explanation {
+  color: #bbb;
+}
+
+@media (max-width: 1280px) {
+  .nasa-photo {
+    display: block;
   }
-  to {
-    transform: rotate(360deg);
+
+  .nasa-photo img {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 30px;
   }
+}
+
+.home {
+  display: flex;
+  height: 100bh;
+  align-items: center;
+  justify-content:  center;
+}
+
+.home-link {
+  font-size: 40px;
+  background: #f59494;
+  display: inline-block;
+  padding: 40px 80px;
+  color: #fff;
+  border-radius: 50%;
+  text-decoration: none;
+  transition: 0.3s ease all;
+  text-transform: uppercase;
+}
+
+.home-link:hover {
+  border-radius: 5px;
+  background: #e77171;
 }
